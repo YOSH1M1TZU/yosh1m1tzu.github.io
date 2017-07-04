@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/main.css" />
+		<meta name="viewport" content="width=device-width" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#main">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header id="main" class="header">
+			<div class="container_main">
+<!--                <img src="images/logos/logo-transparent.png"></img>-->
+				<h2>YOSH1M1TZU</h2>
+				<p>Web Front-End and multi-platform C# developer</p>
+			</div>
+		</header>
+
+		<section id="about" class="section">
+			<div class="container">
+				<h2>About Me</h2>
+                <p>Hello! My name is Peter and I'm a young programming enthusiast.</p>
+                <p>I'm learning .NET C#, front-end and back-end in ASP.NET.</p>
+                <p>I care about every detail and I'm a well organized person. I have huge motivation to expand my knowledge about modern technologies.</p>
+			</div>
+		</section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <img src="images/logos/logo-html5.png"></img>
+                    <img src="images/logos/logo-css3.png"></img>
+                    <img src="images/logos/logo-js.png"></img>
+                    <img src="images/logos/logo-sass.png"></img>
+                    <img src="images/logos/logo-nodejs.png"></img>
+                </div>
+                <p> </p>
+                <div class="skills">
+                    <img src="images/logos/logo-xamarin.png"></img>
+                    <img src="images/logos/logo-csharp.png"></img>
+                    <img src="images/logos/logo-visualstudio.png"></img>
+                </div>
+            </div>
+        </section>
+
+		<section id="portfolio" class="section_projects">
+			<div class="container">
+				<h2>Portfolio</h2>
+				<div class="projects">
+                    <img src="images/project_avatar3.png"></img>
+                    <div class="spacer"></div>
+                    <img src="images/project_avatar3.png"></img>
+                </div>
+                <div class="projects">
+                    <p> </p>
+                    <img src="images/project_avatar3.png"></img>
+                    <div class="spacer"></div>
+                    <img src="images/project_avatar3.png"></img>
+                </div>
+			</div>
+		</section>
+
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Contact</h2>
+                <form class="form">
+                    <input type="text" id="fname" name="fname" class="input_name" placeholder="Full Name" required>
+                    <input type="email" id="femail" name="femail" class="input_email" placeholder="Email" required>
+                    <p> </p>
+                    <label for="fmessage" style="font-weight: 600; text-transform: uppercase;">Message</label>
+                    <textarea type="text" id="fmessage" name="fmessage" class="input_message"></textarea>
+                    <input class="submit" type="submit" id="fsend" name="fsend" value="Submit">
+                </form>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="footer">
+				<p>&copy; YOSH1M1TZU 2016. All rights reserved.</p>
+			</div>
+		</footer>
+
+		<script src="jquery.js"></script>
+
+		<script>
+			$(function() {
+ 				$('a[href*="#"]:not([href="#"])').click(function() {
+    				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      					var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html, body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+    				}
+  				});
+			});
+		</script>
+
+	</body>
+</html>
