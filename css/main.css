@@ -21,7 +21,7 @@ body {
 }
 
 .form {
-    max-width: 800px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px !important;
@@ -42,7 +42,7 @@ body {
 }
 .input_message {
     width: 100%;
-    height: 250px;
+    height: 200px;
     border: 2px solid #cfd9db;
     border-radius: 7px;
     resize: vertical;
@@ -81,10 +81,11 @@ body {
         margin-right: auto;
         text-align: center;
         text-transform: uppercase;
-        color: #4b78a0;
+        color: #26ADE4; /*#4b78a0;*/
         font-family: 'Nunito', sans-serif;
         letter-spacing: 5px;
         margin-bottom: 50px;
+        font-size: 2em;
     }
     .container p {
         text-align: center;
@@ -177,11 +178,14 @@ body {
 .project {
     width: auto;
     overflow: hidden;
+/*    background-color: aliceblue;*/
 }
     .project h2 {
         margin-top: 2%;
         margin-bottom: 10px;
         text-align: center;
+        color: #232226;
+        font-size: 2em;
     }
     .project p {
 
@@ -191,6 +195,7 @@ body {
     }
     .project li {
         text-align: center;
+        font-family: 'Nunito', sans-serif;
     }
 
 .section {
@@ -205,11 +210,12 @@ body {
 .footer {
 	color: #fff;
 	text-align: center;
-	background: #4b78a0;
+	background: #26ADE4;
 }
 	.footer p {
-		font-size: 14px;
+		font-size: 16px;
 		padding: 5px;
+        font-family: 'Nunito', sans-serif;
 	}
 
     .skills img {
